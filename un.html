@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5faec;
+            color: rgb(74, 186, 220);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 导航栏样式 */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 25, 47, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(203, 20, 20);
+            text-decoration: none;
+        }
+
+        /* 封面样式 */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cover {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .cover iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: blur(6px); 
+        }
+
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            z-index: 1;
+            /* 可以添加一些背景和内边距，让文字更易读 */
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* 关于我样式 */
+        .about {
+            max-width: 1200px;
+            margin: 100px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about img {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .about .text {
+            width: 50%;
+        }
+
+        /* 技能进度条样式 */
+        .skill-bar {
+            background-color: #333;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .skill-progress {
+            background-color: rgb(74, 186, 220);
+            height: 20px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .skill-bar {
+            background-color: #333;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .skill-progress {
+            background-color: rgb(74, 186, 220);
+            height: 20px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #f5faec; /* 添加这一行，将文字颜色设置为绿色 */
+        }
+        /* 作品集样式 */
+        .portfolio {
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-item .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .description {
+            opacity: 1;
+        }
+
+
+        /* 联系表单样式 */
+        .contact {
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 10px;
+            background-color: #858685;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- 封面 -->
+    <!-- 封面 -->
+<section class="cover">
+    <iframe width="900" height="506" 
+            src="https://www.youtube.com/embed/Y1BmjPeatI4?autoplay=1&mute=1" 
+            title="1 Hour of White Wave Pattern | QuietQuests" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+        <div class="video-text">
+            <p>YU Zekai
+                24448907
+            </p>
+        </div>
+    </section>
+</body>
+    </div>
+</section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+        <img src="geren.png" >
+        <div class="text">
+            <h2>About Me</h2>
+            <p>I am a student who is studying in Hong Kong Baptist University. My major is AI & Digital Media. I am a student who is studying in Hong Kong Baptist University. My major is AI & Digital Media.</p>
+            <h3>Skills</h3>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;">HTML/CSS</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%;">C++</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%;">Python</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="w700d1q75cms.jpg" alt="项目缩略图">
+                <div class="description">
+                    <p>Project Decription： This is the project of drawing.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="w700d1q75cms.jpg" alt="项目缩略图">
+                <div class="description">
+                    <p>Project Decription： This is the project of drawing.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="w700d1q75cms.jpg" alt="项目缩略图">
+                <div class="description">
+                    <p>Project Decription： This is the project of drawing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div>
+            <h3>Email</h3>
+            <p>244448907@life.hkbu.edu.hk</p>
+        </div>
+        <div>
+            <h3>Phone</h3>
+            <p>+852 12345678</p>
+            <h3>Address</h3>
+            <p>China<br>Hong Kong<br>Kowloon</p>
+        </div>
+        <div>
+            <h3>Address</h3>
+            <p>China<br>Hong Kong<br>Kowloon</p>
+        </div>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.307491096721!2d114.18024667474974!3d22.33784403703293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040091a9c7dc21%3A0x73a7c1a871897662!2sHong%20Kong%20Baptist%20University!5e0!3m2!1sen!2sus!4v1691638104233!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+</body>
+
+</html>    

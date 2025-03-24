@@ -1,0 +1,30 @@
+/* styles.css 基础样式 */
+:root {
+    --deep-blue: #7fb0fb;
+    --neon-blue: #00f3ff;
+    --coral-pink: #ff6b6b;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--deep-blue);
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.neon-text {
+    text-shadow: 0 0 10px var(--neon-blue);
+    background: linear-gradient(to right, #00f3ff, #7fff00);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
